@@ -1,0 +1,24 @@
+{
+    "name": "share-vip",
+    "version": "0.0.1",
+    "description": "A clawer of fetching available vip accounts of thunder, iqiyi and youku.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "vip": "./bin/vip"
+    },
+    "dependencies": {
+        "chalk": "^1.1.1",
+        "cheerio": "^0.20.0",
+        "request": "^2.69.0"
+    },
+    "keywords": [
+        "Thunder",
+        "iQiyi",
+        "Youku"
+    ],
+    "author": "nich",
+    "license": "MIT"
+}
