@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
 var vip = require('..'),
-	chalk = require('chalk');
-
-var run = function(obj) {
-    vip(obj[0], function(err, accounts) {
+    chalk = require('chalk');
+var run = function (obj) {
+    vip(obj[0], function (err, accounts) {
         if (err) {
             console.error(err);
             return;
         }
-        accounts.forEach(function(account) {
-            console.log(chalk.green(account.user) + ' - ' + account.password);
+        accounts.forEach(function (account) {
+            if (account != undefined)
+                console.log(chalk.green(account.user) + ' - ' + account.password);
         });
     });
 };

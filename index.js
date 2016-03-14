@@ -19,15 +19,15 @@ module.exports = function getAccountList(type, callback) {
     } else
         var URL = THUNDERURL;
 
-    request(URL, function(err, res, body) {
+    request(URL, function (err, res, body) {
         if (err) return callback(err);
         var $ = cheerio.load(body);
         var url = $('.content>article.excerpt').first().find('a').attr('href');
-        request(url, function(err, res, body) {
+        request(url, function (err, res, body) {
             if (err) return callback(err);
             $item = cheerio.load(body);
             var accounts = [];
-            $item('article.article-content p').each(function() {
+            $item('article.article-content p').each(function () {
                 var text = $item(this).text().trim();
                 if (text.match(REGEXP)) {
                     accounts = accounts.concat(text.split('\n').map(format));
@@ -36,13 +36,15 @@ module.exports = function getAccountList(type, callback) {
             callback(null, accounts);
         });
     });
-}
+};
 
 module.exports.REGEXP = REGEXP;
 
 function format(str) {
     var obj = {};
     var match = str.match(REGEXP);
+    if(match == null)
+        return;
     obj.user = match[1].trim();
     obj.password = match[2].trim();
     return obj;

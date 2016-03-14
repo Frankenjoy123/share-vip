@@ -1,6 +1,6 @@
 {
     "name": "share-vip",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A clawer of fetching available vip accounts of thunder, iqiyi and youku.",
     "main": "index.js",
     "scripts": {
@@ -20,5 +20,9 @@
         "Youku"
     ],
     "author": "nich",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nichbar/share-vip"
+    }
 }
