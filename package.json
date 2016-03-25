@@ -1,7 +1,7 @@
 {
     "name": "share-vip",
-    "version": "0.0.2",
-    "description": "A clawer of fetching available vip accounts of thunder, iqiyi and youku.",
+    "version": "0.0.4",
+    "description": "A script of fetching available vip accounts of thunder, iqiyi and youku.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
