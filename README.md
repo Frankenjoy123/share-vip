@@ -1,4 +1,4 @@
-## Share-vip.js
+## Share-vip
 
 Yet another script of fetching available vip accounts of thunder, iqiyi and youku.
 It's a copycat of [thunder-vip](https://github.com/nswbmw/thunder-vip)  , but change the sources and add youku & iqiyi.
