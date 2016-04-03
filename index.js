@@ -8,7 +8,8 @@ var THUNDERURL = 'http://www.vipfenxiang.com/xunlei/',
 
 
 // '.'匹配非/n的字符，那就不用再区分是否是邮箱了
-var REGEXP = /(?:vip)?(?:账号)(.+)(?:密码)(.+)/;
+var REGEXP = /(?:vip)?(?:账号)(.+)(?:密码)(.+)/,
+	REGEXP2 = /^(?!账号无法)(?:vip)?(?:账号)(.+)(?:密码)(.+)/;
 
 
 module.exports = function getAccountList(type, callback) {
@@ -16,6 +17,7 @@ module.exports = function getAccountList(type, callback) {
         var URL = IQIYIURL;
     } else if (type == 'youku') {
         var URL = YOUKUURL;
+        REGEXP = REGEXP2;
     } else
         var URL = THUNDERURL;
 
