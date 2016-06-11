@@ -1,6 +1,6 @@
 ## Share-vip
 
-Yet another script of fetching available vip accounts of thunder, iqiyi and youku.
+Yet another script of fetching available vip accounts of ~~thunder,~~ iqiyi and youku.
 It's a copycat of [thunder-vip](https://github.com/nswbmw/thunder-vip)  , but change the sources and add youku & iqiyi.
 Just enjoy it.
 
@@ -15,8 +15,6 @@ Just enjoy it.
 Install node.js and open your commander , and simply type one of the following messages in your commander.
 
 ```
-vip thunder
-
 vip iqiyi
 
 vip youku
