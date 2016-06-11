@@ -1,6 +1,6 @@
 {
     "name": "share-vip",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "A script of fetching available vip accounts of thunder, iqiyi and youku.",
     "main": "index.js",
     "scripts": {
