@@ -2,8 +2,7 @@
 var cheerio = require('cheerio'),
     request = require('request');
 
-var THUNDERURL = 'http://www.vipfenxiang.com/xunlei/',
-    IQIYIURL = 'http://www.vipfenxiang.com/iqiyi/',
+var IQIYIURL = 'http://www.vipfenxiang.com/iqiyi/',
     YOUKUURL = 'http://www.vipfenxiang.com/youku/';
 
 
@@ -18,8 +17,7 @@ module.exports = function getAccountList(type, callback) {
     } else if (type == 'youku') {
         var URL = YOUKUURL;
         REGEXP = REGEXP2;
-    } else
-        var URL = THUNDERURL;
+    }
 
     request(URL, function(err, res, body) {
         if (err) return callback(err);
